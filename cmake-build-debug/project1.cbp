@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="project1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project1">
+				<Option output="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/project1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/."/>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/include"/>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/include/GL"/>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project1/fast">
+				<Option output="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/project1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/."/>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/include"/>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/include/GL"/>
+					<Add directory="/home/edai/Dev/ComputerGraphics/project1/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/edai/Dev/ComputerGraphics/project1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/include/GL/glew.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/include/GL/glxew.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/include/GL/wglew.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/collision.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/collision_stress.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/damping_test.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/newtons_cradle.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/pool.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/rotation_test.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/scenes/spring_rotation.scene">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/application.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/application.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/camera_roam.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/camera_roam.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/imageio.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/imageio.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/opengl.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/scene_loader.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/application/scene_loader.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/camera.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/camera.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/color.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/color.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/math.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/math.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/matrix.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/matrix.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/quaternion.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/quaternion.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/vector.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/math/vector.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/body.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/collisions.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/collisions.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/main.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/physics.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/physics.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/planebody.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/planebody.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/spherebody.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/spherebody.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/spring.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/spring.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/trianglebody.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/physics/trianglebody.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/geometry.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/geometry.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/material.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/material.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/mesh.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/mesh.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/model.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/model.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/scene.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/scene.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/sphere.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/sphere.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/triangle.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/scene/triangle.hpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/tinyxml/tinyxml.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/tinyxml/tinyxml.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/tinyxml/tinyxmlerror.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/src/tinyxml/tinyxmlparser.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/home/edai/Dev/ComputerGraphics/project1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,31 @@
+
+#include "physics/collisions.hpp"
+
+namespace _462 {
+
+bool collides(SphereBody& body1, SphereBody& body2, real_t collision_damping)
+{
+    return false;
+}
+
+bool collides(SphereBody& body1, TriangleBody& body2, real_t collision_damping)
+{
+    // TODO detect collision. If there is one, update velocity
+
+    return false;
+}
+
+bool collides(SphereBody& body1, PlaneBody& body2, real_t collision_damping )
+{
+  // TODO detect collision. If there is one, update velocity
+
+  var a = body1.position - body2.position;
+  if (fabs(dot(a, body2.normal)) < body1.radius)
+    {
+      std::cout << "touch" << std::endl;
+      body1.velocity = body1.velocity - 2 * dot(body1.velocity,body2.normal) * body2.normal;
+      return true;
+    }
+  return false;
+}
+}
