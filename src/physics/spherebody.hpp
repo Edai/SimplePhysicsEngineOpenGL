@@ -20,6 +20,8 @@ namespace _462 {
 
         virtual ~SphereBody() {}
 
+        Vector3 calculateRK4(real_t dt, Vector3 v);
+        
         virtual Vector3 step_position(real_t dt, real_t motion_damping);
 
         virtual Vector3 step_orientation(real_t dt, real_t motion_damping);

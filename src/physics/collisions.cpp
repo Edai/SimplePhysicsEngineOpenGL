@@ -1,5 +1,6 @@
 
 #include "physics/collisions.hpp"
+#define EPSILON 0.0001f
 
 namespace _462 {
 
@@ -12,20 +13,27 @@ namespace _462 {
         {
             Vector3 vp_1 = body1.velocity - body2.velocity;
             Vector3 d = (body2.position - body1.position) / length(body2.position - body1.position);
-            Vector3 vpp_2 = 2 * d * (body1.mass / (body1.mass + body2.mass)) * dot(vp_1, d);
+            Vector3 vpp_2 = 2.0f * d * (body1.mass / (body1.mass + body2.mass)) * dot(vp_1, d);
 
             Vector3 tmp = body2.velocity;
             body2.velocity = body2.velocity + vpp_2;
             body1.velocity = (body1.mass * body1.velocity + body2.mass * tmp - body2.mass * body2.velocity) / (body1.mass);
-            body1.velocity -= collision_damping * body1.velocity;
-            body2.velocity -= collision_damping * body2.velocity;
+
+            if (length(body1.velocity - collision_damping *  body1.velocity) > EPSILON)
+                body1.velocity -= collision_damping * body1.velocity;
+            else
+                body1.velocity = Vector3::Zero;
+            if (length(body2.velocity - collision_damping *  body2.velocity) > EPSILON)
+                body2.velocity -= collision_damping * body2.velocity;
+            else
+                body2.velocity = Vector3::Zero;
             return (true);
         }
         return(false);
     }
 
     //Formula from Ray-triangle intersection for WASHINGTON UNIVERSITY BY Brian Curless
-    bool collides(SphereBody &body1, TriangleBody &body2, real_t collision_damping)
+    bool collides(SphereBody  &body1, TriangleBody &body2, real_t collision_damping)
     {
         Vector3 n = normalize(cross(body2.vertices[1] - body2.vertices[0], body2.vertices[2] - body2.vertices[0]));
         real_t d =  dot((body1.position - body2.position), n);
@@ -40,7 +48,10 @@ namespace _462 {
             if (dot(cross(b - a, q - a), n) < 0 || dot(cross(c - b, q - b), n) < 0 || dot(cross(a - c, q - c), n) < 0)
                 return (false);
             body1.velocity = body1.velocity - 2.0f  * dot(body1.velocity, n) * n;
-            body1.velocity -= collision_damping * body1.velocity;
+            if (length(body1.velocity - collision_damping *  body1.velocity) > EPSILON)
+                body1.velocity -= collision_damping * body1.velocity;
+            else
+                body1.velocity = Vector3::Zero;
             return (true);
         }
         return(false);
@@ -55,9 +66,14 @@ namespace _462 {
         if (fabs(d) < body1.radius)
         {
             body1.velocity = body1.velocity - 2.0f * dot(body1.velocity, body2.normal) * body2.normal;
-            body1.velocity -= collision_damping * body1.velocity;
+            if (length(body1.velocity - collision_damping *  body1.velocity) > EPSILON)
+                body1.velocity -= collision_damping * body1.velocity;
+            else
+                body1.velocity = Vector3::Zero;
             return true;
         }
         return false;
     }
+
+
 }
