@@ -12,7 +12,7 @@ namespace _462 {
     }
 
     void Physics::step(real_t dt) {
-        for (auto sphere = spheres.begin(); sphere != spheres.end(); sphere++) {
+        for (SphereList::iterator sphere = spheres.begin(); sphere != spheres.end(); sphere++) {
             SphereBody &s = *(*sphere);
 
             s.force = Vector3::Zero;
@@ -20,17 +20,17 @@ namespace _462 {
             real_t i = 2.0f / 5.0f *  s.mass *  s.radius *  s.radius;
             s.angular_velocity +=  s.torque / i * dt;
 
-            for (auto iter_spheres = spheres.begin(); iter_spheres != spheres.end(); iter_spheres++) {
+            for (SphereList::iterator iter_spheres = spheres.begin(); iter_spheres != spheres.end(); iter_spheres++) {
                 if (sphere != iter_spheres)
                     collides(s, *(*iter_spheres), collision_damping);
             }
-            for (auto t = triangles.begin(); t != triangles.end(); t++) {
+            for (TriangleList::iterator t = triangles.begin(); t != triangles.end(); t++) {
                 collides(s, *(*t), collision_damping);
             }
-            for (auto iter_planes = planes.begin(); iter_planes != planes.end(); iter_planes++) {
+            for (PlaneList::iterator iter_planes = planes.begin(); iter_planes != planes.end(); iter_planes++) {
                 collides(s, *(*iter_planes), collision_damping);
             }
-            for (auto iter_springs = springs.begin(); iter_springs != springs.end(); iter_springs++) {
+            for (SpringList::iterator iter_springs = springs.begin(); iter_springs != springs.end(); iter_springs++) {
                 (*iter_springs)->step(dt);
             }
             s.step_position(dt, collision_damping);
