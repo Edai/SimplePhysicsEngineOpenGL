@@ -56,4 +56,10 @@ namespace _462 {
         force += (dot(f, offset) / squared_length(offset)) * offset;
         return;
     }
+
+    void SphereBody::apply_torque(real_t dt)
+    {
+        real_t i = 2.0f / 5.0f *  mass *  radius *  radius;
+        angular_velocity +=  torque / i * dt;
+    }
 }
